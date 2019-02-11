@@ -1,0 +1,28 @@
+USE [SG906]
+GO
+
+/****** Object:  Table [dbo].[Sucursales]    Script Date: 02/10/2019 18:35:43 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Sucursales](
+	[sucursal_id] [int] NOT NULL,
+	[sucursal_nombre] [varchar](100) NOT NULL,
+ CONSTRAINT [PK_sucursal] PRIMARY KEY CLUSTERED 
+(
+	[sucursal_id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
